@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PocetPismen {
     public static void main(String[] args) throws IOException {
@@ -13,6 +14,7 @@ public class PocetPismen {
 
         File file = new File("z:/complet.txt"); // napr. soubor.txt
         FileReader reader = new FileReader(file, StandardCharsets.UTF_8);
+        Scanner sc = new Scanner(reader);
 
         for (; ; ) {
             int j = reader.read();
@@ -30,14 +32,16 @@ public class PocetPismen {
                 }
             }
             if (jeNovy) {
-                System.out.print(" "+ ch);
+                System.out.print(ch);
                 hledam.add(ch);
             }
 
         }
+        //System.out.println(hledam);
 
     }
 }
+//kaptoly: čáuříběhzmův.rd,šžc„ťj!“–éýň;ďfx()?‚‘úó-/… »« <>[]
 
 
 
