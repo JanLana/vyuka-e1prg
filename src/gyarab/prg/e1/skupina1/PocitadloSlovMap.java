@@ -34,9 +34,19 @@ public class PocitadloSlovMap {
                 }
             }
         }
-        for(String sloupec1 : arr.keySet()) {
-            System.out.println(sloupec1);
+
+        String vytez = null;
+        int vytez_n = 0;
+
+        for(String key : arr.keySet()) {
+            int value = arr.get(key);
+
+            if (value > vytez_n) {
+                vytez = key;
+                vytez_n = value;
+            }
         }
+        System.out.println(vytez);
 
     }
 }

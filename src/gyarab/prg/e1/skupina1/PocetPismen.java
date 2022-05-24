@@ -16,29 +16,37 @@ public class PocetPismen {
         FileReader reader = new FileReader(file, StandardCharsets.UTF_8);
         Scanner sc = new Scanner(reader);
 
+        char pismeno1 = ' ';
         for (; ; ) {
             int j = reader.read();
             if (j == -1)
                 break;
 
-            char ch = (char) j;
-            ch = Character.toLowerCase(ch);
+            char pismeno2 = (char) j;
+            pismeno2 = Character.toLowerCase(pismeno2);
 
-            // kdyz ch neni v hledam, vypis ho a konec
+            System.out.println(pismeno1 + " ");
+
+
+
+
+
+            /*
+            // kdyz pismeno2 neni v hledam, vypis ho a konec
             boolean jeNovy = true;
             for (int k = 0; k < hledam.size(); k++) {
-                if (ch == (char)hledam.get(k)) {
+                if (pismeno2 == (char)hledam.get(k)) {
                     jeNovy = false;
                 }
             }
             if (jeNovy) {
-                System.out.print(ch);
-                hledam.add(ch);
+                System.out.print(pismeno2);
+                hledam.add(pismeno2);
             }
 
-        }
-        //System.out.println(hledam);
+             */
 
+        }
     }
 }
 //kaptoly: čáuříběhzmův.rd,šžc„ťj!“–éýň;ďfx()?‚‘úó-/… »« <>[]
